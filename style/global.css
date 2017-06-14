@@ -1,0 +1,53 @@
+*{margin: 0; padding: 0;}
+html{background-color: #e7e7e7; }
+a{text-decoration: none;}
+li{list-style: none;}
+body{background: #e4e4e4 url("../images/bg.png")  center;}
+.page{width: 100%; padding: 2em 0;  background: url("../images/rag.png") repeat-x ;}
+.inner{ width: 93%; margin: 0 auto;}
+/*logo*/
+/*.mast{ float:left; width: 32%;}*/
+.logo{background:  url("../images/logo-bg.png") no-repeat 50% 0;}
+.logo a{display: block;  width: 100%; height: 168px;  padding-top: 115px; text-align: center;}
+.logo img{ max-width: 100%;}
+/*菜单*/
+.nav{width: 64%; margin: 2em auto 0;  border-top: 1px solid #888583;}
+.nav li{width: 100%; }
+.nav a{  display: block; width: 100%;padding: 1em  0  3em;  background: url("../images/ornament.png")no-repeat 0 100%; font: bold 14px/1.2 "Book Antiqua"; color: #890101; text-align: center;}
+.nav i{ display: block; font-size: 12px;}
+.nav .first a{ padding-top: 1.5em; border-top: 1px solid #fff9ef;}
+.nav a:hover{ background-position: 50% 100%; color: #e04f4f;}
+/*简介*/
+.section{width: 60%; margin-top: 30px;}
+.intro h2{ text-align: center;}
+.intro p{ margin-top: 1em; font-size: 0.85em; color: #888583;}
+/*图片*/
+.main{ text-align: center;}
+.main h2 {width: 100%; text-align: center; background: url("../images/ornament.png") no-repeat 0 50%;}
+.main h2 b{padding: 0 1em;  background-color: #e7e7e7;}
+.main ol{ width: 100%;  margin-top: 1em; text-align: center;}
+/*.main li{ float: left; width: 33%; }*/
+.main li a{ display: block;}
+.main li span{ display: block; width: 100%; text-align: center; color: #890101;}
+.main img{ width: 90%; border-radius: 5px;}
+/*底部*/
+.footer{ margin-top: 30px; padding: 30px 0; text-align: center; background: url("../images/ornament.png")50% 0 repeat-x;}
+.footer p{ font-size: 12px; color: #888583;}
+/*自适应*/
+@media screen and (min-width: 600px)  {
+    .main ol{float: right;}
+    .main li{ float: left; width: 33%; }
+    .footer{float: right; width: 60%;}
+    .mast{ float:left; width: 32%;}
+    .section{float: right; }
+}
+@media screen and  (max-width: 600px) {
+    .mast{ width: 100%;}
+    .nav{width: 100%;}
+    .section{ width: 100%;}
+    .main li{ width: 100%;}
+    .main li img{ width: 60%;}
+    .footer{ width: 100%;}
+
+}
+
